@@ -7,6 +7,7 @@ public class SiakadFor07 {
     //...................deklarasi..........................//
 
         double nilai, tertinggi = 0, terendah = 100;
+        int jmlLulus = 0, jmlTidak = 0;
 
     //.................perulangan..........................//
 
@@ -18,6 +19,11 @@ public class SiakadFor07 {
             }
             if (nilai<terendah) {
                 terendah = nilai;
+            }
+            if (nilai >= 60) {
+                jmlLulus ++;
+            }else{
+                jmlTidak ++;
             }
         }
     
