@@ -15,18 +15,17 @@ public class WaktuBelajar07 {
 
 //..........................perulangan................................//
 
-        for (int hari = 1; hari <= 5; hari++) {
-            System.out.print("Masukkan jam belajar hari ke-" + hari + ": ");
+        int hari = 1;
+        while (hari <= 7) {
+            System.out.print("Masukkan jam belajar hari ke-" + hari + " : ");
             jmlJam = sc.nextInt();
-            totalJam += jmlJam;
-
-            if (jmlJam > 10) {
-                System.out.println("Tidak mungkin masukkan dengan benar");
-            }continue;
-            
+            if (jmlJam >= 10) {
+                System.out.println("Tidak mungkin");
+                continue;
+            }
+            hari++;
+            totalJam += hari;
         }
-
-        
-        System.out.println("Total belajar minggu ini adalah " + totalJam + "jam");
+        System.out.println("Total jam: "  + totalJam );
     }
 }
