@@ -19,12 +19,12 @@ public class WaktuBelajar07 {
         while (hari <= 7) {
             System.out.print("Masukkan jam belajar hari ke-" + hari + " : ");
             jmlJam = sc.nextInt();
-            if (jmlJam >= 10) {
+            if (jmlJam > 10) {
                 System.out.println("Tidak mungkin");
                 continue;
             }
             hari++;
-            totalJam += hari;
+            totalJam += jmlJam;
         }
         System.out.println("Total jam: "  + totalJam );
     }
