@@ -21,10 +21,11 @@ public class WaktuBelajar07 {
             jmlJam = sc.nextInt();
             if (jmlJam > 10) {
                 System.out.println("Tidak mungkin");
-                continue;
-            }
+                
+            } else {
             hari++;
             totalJam += jmlJam;
+            }
         }
         System.out.println("Total jam: "  + totalJam );
     }
